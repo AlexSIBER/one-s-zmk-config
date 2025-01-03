@@ -39,10 +39,10 @@
 
         home {
             bindings = <
-&kp Q       &kp W       &kp E        &kp R        &kp T        &kp Y      &kp U        &mt PRINTSCREEN I  &kp O       &kp P
-&hm LGUI A  &hm LALT S  &hm LCTRL D  &hm LSHFT F  &kp G        &kp H      &hm LSHFT J  &hm LCTRL K        &hm LALT L  &hm LGUI SEMI
-&kp Z       &kp X       &kp C        &kp V        &kp B        &kp N      &kp M        &kp COMMA          &kp DOT     &kp FSLH
-                                     &kp ESC      &lt 1 SPACE  &lt 2 TAB  &lt 2 RET    &lt 1 BSPC         &kp DEL
+&kp Q       &kp W       &kp E        &kp R        &kp T        &kp Y      &kp U        &kp I        &kp O       &kp P
+&hm LGUI A  &hm LALT S  &hm LCTRL D  &hm LSHFT F  &kp G        &kp H      &hm LSHFT J  &hm LCTRL K  &hm LALT L  &hm LGUI SEMI
+&kp Z       &kp X       &kp C        &kp V        &kp B        &kp N      &kp M        &kp COMMA    &kp DOT     &kp FSLH
+                                     &kp ESC      &lt 1 SPACE  &lt 2 TAB  &lt 2 RET    &lt 1 BSPC   &kp DEL
             >;
         };
 
@@ -57,10 +57,10 @@
 
         nav {
             bindings = <
-&kp RBKT   &kp F2   &kp F3   &kp F4   &none      &kp C_VOL_UP  &kp HOME  &kp UP      &kp PG_UP   &kp LBKT
-&kp GRAVE  &kp F6   &kp F7   &kp F8   &kp LC(C)  &kp K_MUTE    &kp LEFT  &kp DOWN    &kp RIGHT   &kp APOS
-&kp MINUS  &kp F10  &kp F11  &kp F12  &kp LC(V)  &kp C_VOL_DN  &kp END   &none       &kp PG_DN   &kp BSLH
-                             &none    &none      &none         &kp C_PP  &kp C_NEXT  &kp C_PREV
+&kp RBKT   &kp F2   &kp F3   &kp F4   &none      &kp C_VOL_UP  &kp HOME  &kp PRINTSCREEN  &kp PG_UP   &kp LBKT
+&kp GRAVE  &kp F6   &kp F7   &kp F8   &kp LC(C)  &kp K_MUTE    &kp LEFT  &kp UP           &kp RIGHT   &kp APOS
+&kp MINUS  &kp F10  &kp F11  &kp F12  &kp LC(V)  &kp C_VOL_DN  &kp END   &kp DOWN         &kp PG_DN   &kp BSLH
+                             &none    &none      &none         &kp C_PP  &kp C_NEXT       &kp C_PREV
             >;
         };
 
