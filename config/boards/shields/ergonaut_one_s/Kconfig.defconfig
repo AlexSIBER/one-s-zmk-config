@@ -9,6 +9,12 @@ config ZMK_KEYBOARD_NAME
 config ZMK_SPLIT_ROLE_CENTRAL
 	default y
 
+config USB_HID_POLL_INTERVAL_MS
+	default 1
+
+config ZMK_USB_BOOT
+	default y
+
 endif
 
 if SHIELD_ERGONAUT_ONE_S_LEFT || SHIELD_ERGONAUT_ONE_S_RIGHT
