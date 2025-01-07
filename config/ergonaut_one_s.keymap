@@ -62,10 +62,10 @@
 
         nav {
             bindings = <
-&kp F1  &kp F2   &kp F3   &kp F4   &none      &kp C_VOL_UP  &kp HOME  &kp PRINTSCREEN  &kp PG_UP   &none
-&kp F5  &kp F6   &kp F7   &kp F8   &kp LC(C)  &kp K_MUTE    &kp LEFT  &kp UP           &kp RIGHT   &none
-&kp F9  &kp F10  &kp F11  &kp F12  &kp LC(V)  &kp C_VOL_DN  &kp END   &kp DOWN         &kp PG_DN   &none
-                          &none    &none      &none         &kp C_PP  &kp C_NEXT       &kp C_PREV
+&kp F1  &kp F2   &kp LC(LS(TAB))  &kp LC(TAB)  &none      &kp C_VOL_UP  &kp HOME  &kp PRINTSCREEN  &kp PG_UP   &none
+&kp F5  &kp F6   &kp F7           &kp F8       &kp LC(C)  &kp K_MUTE    &kp LEFT  &kp UP           &kp RIGHT   &none
+&kp F9  &kp F10  &kp F11          &kp F12      &kp LC(V)  &kp C_VOL_DN  &kp END   &kp DOWN         &kp PG_DN   &none
+                                  &none        &none      &none         &kp C_PP  &kp C_NEXT       &kp C_PREV
             >;
         };
 
