@@ -47,10 +47,10 @@
 
         home {
             bindings = <
-&kp Q       &kp W       &kp E        &kp R        &kp T        &kp Y      &kp U        &kp I        &kp O       &kp P
-&hm LGUI A  &hm LALT S  &hm LCTRL D  &hm LSHFT F  &kp G        &kp H      &hm LSHFT J  &hm LCTRL K  &hm LALT L  &hm LGUI SEMI
-&kp Z       &kp X       &kp C        &kp V        &kp B        &kp N      &kp M        &kp COMMA    &kp DOT     &kp FSLH
-                                     &kp ESC      &lt 1 SPACE  &lt 2 TAB  &lt 2 RET    &lt 1 BSPC   &kp DEL
+&kp Q       &kp W       &kp E        &kp R        &kp T        &kp Y  &kp U        &kp I        &kp O       &kp P
+&hm LGUI A  &hm LALT S  &hm LCTRL D  &hm LSHFT F  &kp G        &kp H  &hm LSHFT J  &hm LCTRL K  &hm LALT L  &hm LGUI SEMI
+&kp Z       &kp X       &kp C        &kp V        &kp B        &kp N  &kp M        &kp COMMA    &kp DOT     &kp FSLH
+                                     &kp ESC      &lt 2 SPACE  &sl 1  &lt 1 RET    &lt 2 BSPC   &kp DEL
             >;
         };
 
@@ -68,7 +68,7 @@
 &kp F1     &kp F2     &kp LC(LS(TAB))  &kp LC(TAB)  &tog 4  &kp C_VOL_UP  &kp HOME  &kp PRINTSCREEN  &kp PG_UP   &none
 &none      &none      &none            &none        &none   &kp K_MUTE    &kp LEFT  &kp UP           &kp RIGHT   &none
 &kp LC(Z)  &kp LC(X)  &kp LC(C)        &kp LC(V)    &none   &kp C_VOL_DN  &kp END   &kp DOWN         &kp PG_DN   &none
-                                       &none        &none   &none         &kp C_PP  &kp C_NEXT       &kp C_PREV
+                                       &none        &none   &kp TAB       &kp C_PP  &kp C_NEXT       &kp C_PREV
             >;
         };
 
