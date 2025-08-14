@@ -1,1 +1,85 @@
-boards/shields/ergonaut_one_s/ergonaut_one_s.keymap
+#include <behaviors.dtsi>
+#include <dt-bindings/zmk/bt.h>
+#include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/outputs.h>
+
+#define BASE 0
+#define NAV 1
+#define MOUSE 2
+#define MEDIA 3
+#define NUM 4
+#define SYM 5
+#define FUN 6
+#define ADJ 7
+
+/ {
+    behaviors {
+        hm: homerow_mods {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOMEROW_MODS";
+            #binding-cells = <2>;
+            tapping-term-ms = <220>;
+            quick_tap_ms = <0>;
+            flavor = "balanced";
+            bindings = <&kp>, <&kp>;
+        };
+    };
+
+    combos {
+        compatible = "zmk,combos";
+
+        settings {
+            bindings = <&mo 4>;
+            key-positions = <32 33>;
+        };
+    };
+
+    keymap {
+        compatible = "zmk,keymap";
+
+        home {
+            bindings = <
+&kp Q       &kp W       &kp E        &kp R        &kp T        &kp Y      &kp U        &kp I        &kp O         &kp P
+&hm LGUI A  &hm LALT S  &hm LCTRL D  &hm LSHFT F  &kp G        &kp H      &hm LSHFT J  &hm LCTRL K  &hm LALT L    &hm LGUI SEMI
+&kp Z       &kp X       &kp C        &kp V        &kp B        &kp N      &kp M        &kp COMMA    &kp DOT       &kp FSLH
+                                     &kp ESCAPE   &lt 1 SPACE  &lt 2 TAB  &lt 2 RET    &lt 1 BSPC   &lt 3 DELETE
+            >;
+        };
+
+        nav_layer {
+            bindings = <
+&none      &none      &kp LC(LS(TAB))  &kp LC(TAB)  &none   &kp C_VOL_UP  &kp HOME  &kp PRINTSCREEN  &kp PAGE_UP    &kp CAPSLOCK
+&kp LC(Z)  &kp LC(X)  &kp LC(C)        &kp LC(V)    &none   &kp C_MUTE    &kp LEFT  &kp UP_ARROW     &kp UP         &kp INSERT
+&none      &none      &none            &none        &none   &kp C_VOL_DN  &kp END   &kp DOWN_ARROW   &kp PAGE_DOWN  &none
+                                       &trans       &trans  &trans        &kp C_PP  &kp C_NEXT       &kp C_PREV
+            >;
+        };
+
+        num {
+            bindings = <
+&kp RIGHT_BRACKET  &kp GRAVE     &kp MINUS     &kp PLUS    &kp EQUAL    &none      &kp UNDER      &kp BACKSLASH  &kp APOSTROPHE        &kp LEFT_BRACKET
+&kp EXCLAMATION    &kp AT        &kp HASH      &kp DOLLAR  &kp PERCENT  &kp CARET  &kp AMPERSAND  &kp ASTRK      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
+&kp NUMBER_1       &kp NUMBER_2  &kp NUMBER_3  &kp N4      &kp N5       &kp N6     &kp N7         &kp N8         &kp N9                &kp N0
+                                               &trans      &trans       &trans     &trans         &trans         &trans
+            >;
+        };
+
+        fun {
+            bindings = <
+&kp F12  &kp F7  &kp F8  &kp F9  &trans  &trans  &trans  &trans  &trans  &trans
+&kp F11  &kp F4  &kp F5  &kp F6  &trans  &trans  &trans  &trans  &trans  &trans
+&kp F10  &kp F1  &kp F2  &kp F3  &trans  &trans  &trans  &trans  &trans  &trans
+                         &trans  &trans  &trans  &trans  &trans  &trans
+            >;
+        };
+
+        adj_layer {
+            bindings = <
+&bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &bt BT_SEL 4  &bt BT_SEL 3  &bt BT_SEL 2  &bt BT_SEL 1  &bt BT_SEL 0
+&bt BT_CLR    &bt BT_PRV    &bt BT_NXT    &sys_reset    &bootloader   &bootloader   &sys_reset    &bt BT_NXT    &bt BT_PRV    &bt BT_CLR
+&out OUT_TOG  &out OUT_BLE  &out OUT_USB  &none         &none         &none         &none         &out OUT_USB  &out OUT_BLE  &out OUT_TOG
+                                          &none         &none         &none         &none         &none         &none
+            >;
+        };
+    };
+};
