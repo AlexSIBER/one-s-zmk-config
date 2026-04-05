@@ -102,19 +102,19 @@
 
         adj_layer {
             bindings = <
-&bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &bt BT_SEL 4  &bt BT_SEL 3  &bt BT_SEL 2  &bt BT_SEL 1  &bt BT_SEL 0
-&bt BT_CLR    &bt BT_PRV    &bt BT_NXT    &sys_reset    &bootloader   &bootloader   &sys_reset    &bt BT_NXT    &bt BT_PRV    &bt BT_CLR
-&out OUT_TOG  &out OUT_BLE  &out OUT_USB  &none         &none         &none         &none         &out OUT_USB  &out OUT_BLE  &out OUT_TOG
-                                          &none         &none         &none         &none         &none         &none
+&bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &bt BT_SEL 4    &bt BT_SEL 3  &bt BT_SEL 2  &bt BT_SEL 1  &bt BT_SEL 0
+&bt BT_CLR    &bt BT_PRV    &bt BT_NXT    &sys_reset    &bootloader   &bootloader     &sys_reset    &bt BT_NXT    &bt BT_PRV    &bt BT_CLR
+&out OUT_TOG  &out OUT_BLE  &out OUT_USB  &none         &none         &studio_unlock  &none         &out OUT_USB  &out OUT_BLE  &out OUT_TOG
+                                          &none         &none         &none           &none         &none         &none
             >;
         };
 
         diktor {
             bindings = <
-&kp W           &dr_soft_sign  &kp Z     &dr_comma  &dr_dot      &kp P        &kp D      &kp R            &kp L         &kp X
-&hm LEFT_GUI E  &kp B          &kp T     &kp J      &kp F        &kp K        &kp Y      &kp N            &kp C         &kp H
-&kp A           &kp APOS       &kp LBKT  &kp S      &kp DOT      &kp COMMA    &kp V      &kp G            &kp U         &kp SEMI
-                                         &tog 0     &lt 1 SPACE  &lt 2 ENTER  &lt 2 TAB  &lt 1 BACKSPACE  &lt 3 DELETE
+&kp W           &dr_soft_sign   &kp Z               &dr_comma         &dr_dot      &kp P        &kp D      &kp R            &kp L         &kp X
+&hm LEFT_GUI E  &hm LEFT_ALT B  &hm LEFT_CONTROL T  &hm LEFT_SHIFT J  &kp F        &kp K        &kp Y      &kp N            &kp C         &kp H
+&kp A           &kp APOS        &kp LBKT            &kp S             &kp DOT      &kp COMMA    &kp V      &kp G            &kp U         &kp SEMI
+                                                    &tog 5            &lt 1 SPACE  &lt 2 ENTER  &lt 2 TAB  &lt 1 BACKSPACE  &lt 3 DELETE
             >;
         };
     };
