@@ -1,7 +1,9 @@
 include:
   - board: seeeduino_xiao_ble
     shield: ergonaut_one_s_left
+    cmake-args: -DCONFIG_ZMK_STUDIO=y
   - board: seeeduino_xiao_ble
     shield: ergonaut_one_s_right
+    cmake-args: -DCONFIG_ZMK_STUDIO=y
   - board: seeeduino_xiao_ble
     shield: settings_reset
